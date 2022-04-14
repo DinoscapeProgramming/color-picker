@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 1rem;
+            background-color: #ffffff;
+            min-width: 600px;
+        }
+        .input, .select {
+            padding: 12px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit:hover {
+            background-color: #45a049;
+        }
+        .color {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Settings</h1>
+    <h3>Notification Message</h3>
+    <select id="select1" name="select1" class="input">
+        <option value="enabled">enabled</option>
+        <option value="disabled">disabled</option>
+    </select>
+    <input id="input1" class="input" placeholder="Message"></input>
+    <button id="submit1" class="submit">Save</button>
+    <button id="reset1" class="submit">Reset</button>
+
+    <h3>Context Menus</h3>
+    <select id="select4" name="select4" class="input">
+        <option value="enabled">enabled</option>
+        <option value="disabled">disabled</option>
+    </select>
+    <input id="input3" class="input" placeholder="Title"></input>
+    <button id="submit7" class="submit">Save</button>
+    <button id="reset7" class="submit">Reset</button>
+
+    <h3>Text on click</h3>
+    <select id="select3" name="select3" class="input">
+        <option value="enabled">enabled</option>
+        <option value="disabled">disabled</option>
+    </select>
+    <input id="input2" class="input" placeholder="Text" style="display: none;"></input>
+    <button id="submit5" class="submit">Save</button>
+    <button id="reset5" class="submit">Reset</button>
+
+    <h3>Copy on click</h3>
+    <select id="select2" name="select2" class="input">
+        <option value="enabled">enabled</option>
+        <option value="disabled">disabled</option>
+    </select>
+    <button id="submit2" class="submit">Save</button>
+    <button id="reset2" class="submit">Reset</button>
+
+    <h3>Edge Color</h3>
+    <input id="color1" class="color" type="color" value="#838383"></input>
+    <button id="submit3" class="submit">Save</button>
+    <button id="reset3" class="submit">Reset</button>
+
+    <h3>Edge Color on hover</h3>
+    <input id="color2" class="color" type="color" value="#000000"></input>
+    <button id="submit4" class="submit">Save</button>
+    <button id="reset4" class="submit">Reset</button>
+
+    <h3>Color of text on click </h3>
+    <input id="color3" class="color" type="color" value="#008000"></input>
+    <button id="submit6" class="submit">Save</button>
+    <button id="reset6" class="submit">Reset</button>
+</body>
+<script src="settings.js"></script>
+</html>

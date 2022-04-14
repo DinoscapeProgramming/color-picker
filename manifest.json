@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "Nice Color Picker for Chrome and Firefox",
+    "version": "0.1",
+    "homepage_url": "https://github.com/DinoscapeProgramming/color-picker",
+    "action": {
+        "default_icon": "icons/128x128.png",
+        "default_popup": "popup.html",
+        "default_title": "Color Picker"
+    },
+    "permissions": [
+        "notifications",
+        "storage",
+        "contextMenus"
+    ],
+    "icons": {
+        "16": "icons/16x16.png",
+        "48": "icons/48x48.png",
+        "128": "icons/128x128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
